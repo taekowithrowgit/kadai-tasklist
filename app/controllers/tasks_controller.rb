@@ -7,7 +7,7 @@ class TasksController < ApplicationController
   end
 
   def show
-    set_task
+    # set_task
     # @task = Task.find(params[:id]) 
   end
 
@@ -29,12 +29,12 @@ class TasksController < ApplicationController
   end
 
   def edit
-     set_task
+    # set_task
     # @task = Task.find(params[:id]) 
   end
 
   def update
-    set_task
+    # set_task
     # @task = Task.find(params[:id]) 
 
     if @task.update(task_params)
@@ -49,7 +49,7 @@ class TasksController < ApplicationController
 
   def destroy
       
-      set_task 
+      # set_task 
       # @task = Task.find(params[:id]) 
       @task.destroy
      flash[:success] = 'タスク は正常に削除されました'
